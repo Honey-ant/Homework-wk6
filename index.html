@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./normalize.css/normalize.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Weather Widget</title>
+</head>
+<body class="hero">
+    <header>
+        <h1>Weather Dashboard</h1>
+    </header>
+<!-- <section class="hero"> -->
+    <div class="container">
+    <div class="city-search ">
+                <div class="search">
+                    <form id="cityForm">
+                        <label for="cityName">Search for a city:</label>
+                        <input name="cityName" id="cityName" type="text" autofocus="true" placeholder="search for a city...">
+                        <button id="submit-btn"><i class="bi bi-search"></i></button>
+                    </form>
+                </div>
+                <div class="city-btns">
+                    
+                        <button class="btns">Broome</button>
+                        <button class="btns">Melbourne</button>
+                        <button class="btns">Sydney</button>
+
+                </div>
+    </div>
+
+        <div class="results">  
+                    <div class="current" id="current">
+            <!-- searchd city will go here -->
+                     <span><h2 id="cityResult">Atlanta </h2></span>
+                    
+                        <ul>
+                            <li><p>Temp:<span id="tempResult">{tempId}</span></p></li>
+                            <li><p>Humidity: <span id="humResult">{humId}</span></p></li>
+                            <li><p>Wind Speend:<span id="windResult">{windId}</span></p></li>
+                            <li><p>UV Index:<span id="uvResult">{uvId}</span></p></li>
+                            <li><p>Rain: <span id="rainResult">{rainId}</span></p></li>
+                        </ul>
+                    
+                    </div>
+                <div class="forecast container">
+                  <div><h3 class="five-day">5-Day Forecast:</h3></div>
+                  <br>
+                <!-- forecast will go here -->
+                        <!-- <div class="forecast-content"> -->
+                            <div class="day-cards"></div>
+                            <div class="day-cards"></div>
+                            <div class="day-cards"></div>
+                            <div class="day-cards"></div>
+                            <div class="day-cards"></div>
+                        </div>
+                </div>
+        </div>
+
+    </div>
+<!-- </section> -->
+</body>
+<footer></footer>
+<script src="./weather.js" defer></script>
+</html>
